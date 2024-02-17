@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E1EEC4972B52CF5600BAD39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EEC4962B52CF5600BAD39B /* AppDelegate.swift */; };
 		E1EEC4992B52CF5600BAD39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EEC4982B52CF5600BAD39B /* SceneDelegate.swift */; };
-		E1EEC49B2B52CF5600BAD39B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EEC49A2B52CF5600BAD39B /* ViewController.swift */; };
-		E1EEC49E2B52CF5600BAD39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1EEC49C2B52CF5600BAD39B /* Main.storyboard */; };
+		E1EEC49B2B52CF5600BAD39B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EEC49A2B52CF5600BAD39B /* HomeViewController.swift */; };
 		E1EEC4A02B52CF5700BAD39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EEC49F2B52CF5700BAD39B /* Assets.xcassets */; };
 		E1EEC4A32B52CF5700BAD39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1EEC4A12B52CF5700BAD39B /* LaunchScreen.storyboard */; };
+		E1EEC4AB2B52DD3E00BAD39B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EEC4AA2B52DD3E00BAD39B /* SignUpViewController.swift */; };
+		E1EEC4B12B52E0F900BAD39B /* OptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EEC4B02B52E0F900BAD39B /* OptionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E1EEC4932B52CF5600BAD39B /* hamro-patro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hamro-patro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EEC4962B52CF5600BAD39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1EEC4982B52CF5600BAD39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E1EEC49A2B52CF5600BAD39B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E1EEC49D2B52CF5600BAD39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1EEC49A2B52CF5600BAD39B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E1EEC49F2B52CF5700BAD39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1EEC4A22B52CF5700BAD39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1EEC4A42B52CF5700BAD39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1EEC4AA2B52DD3E00BAD39B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E1EEC4B02B52E0F900BAD39B /* OptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		E1EEC4952B52CF5600BAD39B /* hamro-patro */ = {
 			isa = PBXGroup;
 			children = (
+				E1EEC4AF2B52DEAB00BAD39B /* Component */,
+				E1EEC4AE2B52DD7300BAD39B /* View */,
+				E1EEC49F2B52CF5700BAD39B /* Assets.xcassets */,
 				E1EEC4962B52CF5600BAD39B /* AppDelegate.swift */,
 				E1EEC4982B52CF5600BAD39B /* SceneDelegate.swift */,
-				E1EEC49A2B52CF5600BAD39B /* ViewController.swift */,
-				E1EEC49C2B52CF5600BAD39B /* Main.storyboard */,
-				E1EEC49F2B52CF5700BAD39B /* Assets.xcassets */,
 				E1EEC4A12B52CF5700BAD39B /* LaunchScreen.storyboard */,
 				E1EEC4A42B52CF5700BAD39B /* Info.plist */,
 			);
 			path = "hamro-patro";
+			sourceTree = "<group>";
+		};
+		E1EEC4AE2B52DD7300BAD39B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1EEC49A2B52CF5600BAD39B /* HomeViewController.swift */,
+				E1EEC4AA2B52DD3E00BAD39B /* SignUpViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E1EEC4AF2B52DEAB00BAD39B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E1EEC4B02B52E0F900BAD39B /* OptionButton.swift */,
+			);
+			name = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +146,6 @@
 			files = (
 				E1EEC4A32B52CF5700BAD39B /* LaunchScreen.storyboard in Resources */,
 				E1EEC4A02B52CF5700BAD39B /* Assets.xcassets in Resources */,
-				E1EEC49E2B52CF5600BAD39B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1EEC49B2B52CF5600BAD39B /* ViewController.swift in Sources */,
+				E1EEC4B12B52E0F900BAD39B /* OptionButton.swift in Sources */,
+				E1EEC49B2B52CF5600BAD39B /* HomeViewController.swift in Sources */,
 				E1EEC4972B52CF5600BAD39B /* AppDelegate.swift in Sources */,
+				E1EEC4AB2B52DD3E00BAD39B /* SignUpViewController.swift in Sources */,
 				E1EEC4992B52CF5600BAD39B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E1EEC49C2B52CF5600BAD39B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1EEC49D2B52CF5600BAD39B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E1EEC4A12B52CF5700BAD39B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,9 +308,9 @@
 				INFOPLIST_FILE = "hamro-patro/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,9 +335,9 @@
 				INFOPLIST_FILE = "hamro-patro/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
